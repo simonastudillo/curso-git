@@ -151,3 +151,44 @@ git rm <archivo>
 ```
 git branch <nombre de la rama>
 ```
+
+# 28.1 Crear una nueva rama y cambiar a ella
+```
+git checkout -b <nombre de la rama>
+```
+
+# 29. Cambiar de rama
+```
+git checkout <nombre de la rama>
+```
+
+# 30. Unir una rama al main
+> Es importante estar en la rama main para hacer el merge.
+```
+git merge <nombre de la rama>
+```
+
+# 31. Eliminar una rama
+```
+git branch -d <nombre de la rama>
+```
+
+# 32. Crear un tag
+```
+git tag <nombre del tag> <commit>
+```
+
+# 33. Ver los tags
+```
+git tag # Ver los tags
+```
+
+# 34. Eliminar un tag
+```
+git tag -d <nombre del tag>
+```
+
+# 35. Ver el detalle de un tag
+```
+git show <nombre del tag>
+```
