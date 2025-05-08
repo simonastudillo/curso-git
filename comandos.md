@@ -152,6 +152,11 @@ git rm <archivo>
 git branch <nombre de la rama>
 ```
 
+# 28.1 Crear una nueva rama y cambiar a ella
+```
+git checkout -b <nombre de la rama>
+```
+
 # 29. Cambiar de rama
 ```
 git checkout <nombre de la rama>
