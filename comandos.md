@@ -151,3 +151,19 @@ git rm <archivo>
 ```
 git branch <nombre de la rama>
 ```
+
+# 29. Cambiar de rama
+```
+git checkout <nombre de la rama>
+```
+
+# 30. Unir una rama al main
+> Es importante estar en la rama main para hacer el merge.
+```
+git merge <nombre de la rama>
+```
+
+# 31. Eliminar una rama
+```
+git branch -d <nombre de la rama> # Eliminar una rama local
+```
