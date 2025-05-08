@@ -170,5 +170,25 @@ git merge <nombre de la rama>
 
 # 31. Eliminar una rama
 ```
-git branch -d <nombre de la rama> # Eliminar una rama local
+git branch -d <nombre de la rama>
+```
+
+# 32. Crear un tag
+```
+git tag <nombre del tag> <commit>
+```
+
+# 33. Ver los tags
+```
+git tag # Ver los tags
+```
+
+# 34. Eliminar un tag
+```
+git tag -d <nombre del tag>
+```
+
+# 35. Ver el detalle de un tag
+```
+git show <nombre del tag>
 ```
