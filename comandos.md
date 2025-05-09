@@ -192,3 +192,17 @@ git tag -d <nombre del tag>
 ```
 git show <nombre del tag>
 ```
+
+# 36. Almacenamiento "temportal" de cambios (stash)
+```
+git stash # Almacenar los cambios
+```
+# 37. Ver los cambios almacenados
+```
+git stash list
+```
+
+# 38. Aplicar los cambios almacenados
+```
+git stash pop # Aplicar los cambios y eliminar el stash
+```
