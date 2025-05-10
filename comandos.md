@@ -237,3 +237,8 @@ git stash clear # Eliminar todos los stashes
 ```
 git stash apply <n> # Recuperar un stash específico
 ```
+
+# 42. Actualizar la rama con los nuevos cambios del main
+```
+git rebase main
+```
