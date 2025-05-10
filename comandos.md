@@ -197,12 +197,43 @@ git show <nombre del tag>
 ```
 git stash # Almacenar los cambios
 ```
+
+# 36.1 Almacenar cambios con un mensaje
+```
+git stash save "Mensaje del stash" # Almacenar los cambios con un mensaje
+```
+
 # 37. Ver los cambios almacenados
 ```
 git stash list
 ```
 
+# 37.1 Ver los cambios almacenados con detalle
+```
+git stash list --stat
+```
+
 # 38. Aplicar los cambios almacenados
 ```
 git stash pop # Aplicar los cambios y eliminar el stash
+```
+
+# 39. Eliminar el stash
+```
+git stash drop # Eliminar el stash
+```
+
+# 40.1 Eliminar un stash específico
+```
+git stash drop <n> # Eliminar un stash específico
+```
+
+# 40. Eliminar todos los stashes
+```
+git stash clear # Eliminar todos los stashes
+```
+
+# 41. Recuperar un stash específico
+```
+git stash apply <n> # Recuperar un stash específico
 ```
