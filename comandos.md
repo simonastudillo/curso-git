@@ -61,6 +61,11 @@ git commit -m "Mensaje del commit"
 git checkout -- .
 ```
 
+# 11.1 Volver un archivo específico al último commit
+```
+git checkout -- <archivo>
+```
+
 # 12. Ver información de la rama
 ```
 git branch
@@ -192,3 +197,76 @@ git tag -d <nombre del tag>
 ```
 git show <nombre del tag>
 ```
+
+# 36. Almacenamiento "temportal" de cambios (stash)
+```
+git stash # Almacenar los cambios
+```
+
+# 36.1 Almacenar cambios con un mensaje
+```
+git stash save "Mensaje del stash" # Almacenar los cambios con un mensaje
+```
+
+# 37. Ver los cambios almacenados
+```
+git stash list
+```
+
+# 37.1 Ver los cambios almacenados con detalle
+```
+git stash list --stat
+```
+
+# 38. Aplicar los cambios almacenados
+```
+git stash pop # Aplicar los cambios y eliminar el stash
+```
+
+# 39. Eliminar el stash
+```
+git stash drop # Eliminar el stash
+```
+
+# 40.1 Eliminar un stash específico
+```
+git stash drop <n> # Eliminar un stash específico
+```
+
+# 40. Eliminar todos los stashes
+```
+git stash clear # Eliminar todos los stashes
+```
+
+# 41. Recuperar un stash específico
+```
+git stash apply <n> # Recuperar un stash específico
+```
+
+# 42. Actualizar la rama con los nuevos cambios del main
+```
+git rebase main
+```
+
+# 43. Rebase interactivo
+```
+git rebase -i <commit> # Rebase interactivo
+```
+
+# 43.1. Rebase interactiva para fusionar commits
+```
+git rebase -i HEAD~<n> # Rebase interactivo para fusionar los últimos n commits
+```
+> Cambiar pick por squash o s para fusionar ese commit con el anterior.
+
+# 43.2. Rebase interactivo para editar el comentario de un commit
+```
+git rebase -i HEAD~<n> # Rebase interactivo para editar el comentario de un commit
+```
+> Cambiar pick por reword o r para editar el comentario de ese commit.
+
+# 43.3. Rebase interactivo para editar un commit
+```
+git rebase -i HEAD~<n> # Rebase interactivo para editar un commit
+```
+> Cambiar pick por edit o e para editar ese commit.
