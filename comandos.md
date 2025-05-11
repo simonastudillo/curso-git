@@ -242,3 +242,14 @@ git stash apply <n> # Recuperar un stash específico
 ```
 git rebase main
 ```
+
+# 43. Rebase interactivo
+```
+git rebase -i <commit> # Rebase interactivo
+```
+
+# 44. Rebase interactiva para fusionar commits
+```
+git rebase -i HEAD~<n> # Rebase interactivo para fusionar los últimos n commits
+```
+> Cambiar pick por squash o s para fusionar ese commit con el anterior.
