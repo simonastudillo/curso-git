@@ -248,8 +248,15 @@ git rebase main
 git rebase -i <commit> # Rebase interactivo
 ```
 
-# 44. Rebase interactiva para fusionar commits
+# 43.1. Rebase interactiva para fusionar commits
 ```
 git rebase -i HEAD~<n> # Rebase interactivo para fusionar los últimos n commits
 ```
 > Cambiar pick por squash o s para fusionar ese commit con el anterior.
+
+# 43.2. Rebase interactivo para editar el comentario de un commit
+```
+git rebase -i HEAD~<n> # Rebase interactivo para editar el comentario de un commit
+```
+> Cambiar pick por reword o r para editar el comentario de ese commit.
+```
