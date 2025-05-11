@@ -61,6 +61,11 @@ git commit -m "Mensaje del commit"
 git checkout -- .
 ```
 
+# 11.1 Volver un archivo específico al último commit
+```
+git checkout -- <archivo>
+```
+
 # 12. Ver información de la rama
 ```
 git branch
@@ -259,4 +264,9 @@ git rebase -i HEAD~<n> # Rebase interactivo para fusionar los últimos n commits
 git rebase -i HEAD~<n> # Rebase interactivo para editar el comentario de un commit
 ```
 > Cambiar pick por reword o r para editar el comentario de ese commit.
+
+# 43.3. Rebase interactivo para editar un commit
 ```
+git rebase -i HEAD~<n> # Rebase interactivo para editar un commit
+```
+> Cambiar pick por edit o e para editar ese commit.
