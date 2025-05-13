@@ -270,3 +270,18 @@ git rebase -i HEAD~<n> # Rebase interactivo para editar el comentario de un comm
 git rebase -i HEAD~<n> # Rebase interactivo para editar un commit
 ```
 > Cambiar pick por edit o e para editar ese commit.
+
+# 44. Agregar un repositorio remoto
+```
+git remote add <nombre> <url> # Agregar un repositorio remoto. ejemplo: git remote add origin
+```
+
+# 45. Ver repositorio remoto
+```
+git remote -v # Ver repositorio remoto
+```
+
+# 46. Subir cambios al repositorio remoto
+```
+git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: git push origin main
+```
