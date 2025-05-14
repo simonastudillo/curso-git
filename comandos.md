@@ -294,3 +294,7 @@ git push --tags
 ```
 git pull
 ```
+# 49. Bajar cambios de una rama específica del repositorio remoto
+```
+git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
+```
