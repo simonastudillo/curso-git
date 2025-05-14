@@ -289,3 +289,8 @@ git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: 
 ```
 git push --tags
 ```
+
+# 48. Bajar cambios del repositorio remoto de la rama actual
+```
+git pull
+```
