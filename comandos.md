@@ -285,3 +285,7 @@ git remote -v # Ver repositorio remoto
 ```
 git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: git push origin main
 ```
+# 47. Subir tags al repositorio remoto
+```
+git push --tags
+```
