@@ -298,3 +298,7 @@ git pull
 ```
 git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
 ```
+# 50. Clonar un repositorio remoto
+```
+git clone <url> # Clonar un repositorio remoto
+```
