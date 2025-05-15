@@ -294,11 +294,22 @@ git push --tags
 ```
 git pull
 ```
-# 49. Bajar cambios de una rama específica del repositorio remoto
+# 49.1. Bajar cambios de una rama específica del repositorio remoto
 ```
 git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
 ```
-# 50. Clonar un repositorio remoto
+
+#  49.2 Bajar cambios con conflictos
+```
+git pull --rebase # Bajar cambios con conflictos
+```
+
+# 49.3 Terminar el rebase
+```
+git rebase --continue # Terminar el rebase
+```
+
+# 49. Clonar un repositorio remoto
 ```
 git clone <url> # Clonar un repositorio remoto
 ```
