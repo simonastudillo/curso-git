@@ -270,3 +270,46 @@ git rebase -i HEAD~<n> # Rebase interactivo para editar el comentario de un comm
 git rebase -i HEAD~<n> # Rebase interactivo para editar un commit
 ```
 > Cambiar pick por edit o e para editar ese commit.
+
+# 44. Agregar un repositorio remoto
+```
+git remote add <nombre> <url> # Agregar un repositorio remoto. ejemplo: git remote add origin
+```
+
+# 45. Ver repositorio remoto
+```
+git remote -v # Ver repositorio remoto
+```
+
+# 46. Subir cambios al repositorio remoto
+```
+git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: git push origin main
+```
+# 47. Subir tags al repositorio remoto
+```
+git push --tags
+```
+
+# 48. Bajar cambios del repositorio remoto de la rama actual
+```
+git pull
+```
+# 49.1. Bajar cambios de una rama específica del repositorio remoto
+```
+git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
+```
+
+#  49.2 Bajar cambios con conflictos
+```
+git pull --rebase # Bajar cambios con conflictos
+```
+
+# 49.3 Terminar el rebase
+```
+git rebase --continue # Terminar el rebase
+```
+
+# 49. Clonar un repositorio remoto
+```
+git clone <url> # Clonar un repositorio remoto
+```
