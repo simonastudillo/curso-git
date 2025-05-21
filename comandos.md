@@ -290,6 +290,12 @@ git remote -v # Ver repositorio remoto
 ```
 git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: git push origin main
 ```
+
+# 46.1 Crear rama remota y subir cambios
+```
+git push --set-upstream origin rama-villanos # Crear rama remota y subir cambios
+```
+
 # 47. Subir tags al repositorio remoto
 ```
 git push --tags
