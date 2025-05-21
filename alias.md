@@ -7,3 +7,8 @@ git config --global alias.lg "log --graph --abbrev-commit --decorate --format=fo
 ```
 git config --global alias.s "status --short"
 ```
+
+# Alias para ver el status de git de forma más legible y ver la información del branch activo.
+```
+git config --global alias.s "status --short --branch"
+```

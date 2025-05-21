@@ -71,6 +71,11 @@ git checkout -- <archivo>
 git branch
 ```
 
+# 12.1 Ver ramas remotas
+```
+git branch -a
+```
+
 # 13. Cambiar el nombre de la rama default (master a main)
 ```
 git config --global init.defaultBranch main
@@ -183,6 +188,11 @@ git branch -d <nombre de la rama>
 git tag <nombre del tag> <commit>
 ```
 
+# 32.1 Crear un tag con un mensaje
+```
+git tag -a <nombre del tag> -m "Mensaje del tag" <commit>
+```
+
 # 33. Ver los tags
 ```
 git tag # Ver los tags
@@ -285,6 +295,12 @@ git remote -v # Ver repositorio remoto
 ```
 git push <nombre remoto> <rama> # Subir cambios al repositorio remoto. ejemplo: git push origin main
 ```
+
+# 46.1 Crear rama remota y subir cambios
+```
+git push --set-upstream origin rama-villanos # Crear rama remota y subir cambios
+```
+
 # 47. Subir tags al repositorio remoto
 ```
 git push --tags
@@ -294,17 +310,23 @@ git push --tags
 ```
 git pull
 ```
-# 49.1. Bajar cambios de una rama específica del repositorio remoto
+
+# 48.1 Bajar todos los cambios del repositorio remoto incluyendo las ramas
+```
+git pull --all
+```
+
+# 48.2. Bajar cambios de una rama específica del repositorio remoto
 ```
 git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
 ```
 
-#  49.2 Bajar cambios con conflictos
+#  48.3 Bajar cambios con conflictos
 ```
 git pull --rebase # Bajar cambios con conflictos
 ```
 
-# 49.3 Terminar el rebase
+# 48.4 Terminar el rebase
 ```
 git rebase --continue # Terminar el rebase
 ```
@@ -312,4 +334,9 @@ git rebase --continue # Terminar el rebase
 # 49. Clonar un repositorio remoto
 ```
 git clone <url> # Clonar un repositorio remoto
+```
+
+# 50. Limpiar ramas remotas de forma local
+```
+git remote prune origin # Limpiar ramas remotas de forma local
 ```
