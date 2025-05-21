@@ -335,3 +335,8 @@ git rebase --continue # Terminar el rebase
 ```
 git clone <url> # Clonar un repositorio remoto
 ```
+
+# 50. Limpiar ramas remotas de forma local
+```
+git remote prune origin # Limpiar ramas remotas de forma local
+```
