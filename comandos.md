@@ -71,6 +71,11 @@ git checkout -- <archivo>
 git branch
 ```
 
+# 12.1 Ver ramas remotas
+```
+git branch -a
+```
+
 # 13. Cambiar el nombre de la rama default (master a main)
 ```
 git config --global init.defaultBranch main
@@ -305,17 +310,23 @@ git push --tags
 ```
 git pull
 ```
-# 49.1. Bajar cambios de una rama específica del repositorio remoto
+
+# 48.1 Bajar todos los cambios del repositorio remoto incluyendo las ramas
+```
+git pull --all
+```
+
+# 48.2. Bajar cambios de una rama específica del repositorio remoto
 ```
 git pull <nombre remoto> <rama> # Bajar cambios de una rama específica del repositorio remoto
 ```
 
-#  49.2 Bajar cambios con conflictos
+#  48.3 Bajar cambios con conflictos
 ```
 git pull --rebase # Bajar cambios con conflictos
 ```
 
-# 49.3 Terminar el rebase
+# 48.4 Terminar el rebase
 ```
 git rebase --continue # Terminar el rebase
 ```
