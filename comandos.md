@@ -183,6 +183,11 @@ git branch -d <nombre de la rama>
 git tag <nombre del tag> <commit>
 ```
 
+# 32.1 Crear un tag con un mensaje
+```
+git tag -a <nombre del tag> -m "Mensaje del tag" <commit>
+```
+
 # 33. Ver los tags
 ```
 git tag # Ver los tags
